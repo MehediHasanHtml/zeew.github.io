@@ -1,0 +1,746 @@
+/*-----------------------------------------------------------------------------------
+
+  Template Name: Responsive Multipurpose HTML5 Template
+  Template URI: 
+  Description: Responsive Multipurpose, one page, Portfolio, Business,  Creative HTML Templatee
+  Author: Mehedi Hasan
+  Author URI: http://mrmehedihasan.com
+  Version: 1.0
+
+CSS INDEX
+===================
+
+-----------------------------------------------------------------------------------*/
+
+/* **********************************
+Reset CSS
+************************************** */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+/********************************
+ Typography Style
+******************************** */
+/* 
+@font-face {
+    font-family: 'TruenoLt';
+    src: url('../webfont/TruenoLt.ttf');
+    src: url('../webfont/TruenoLt.ttf') format('embedded-opentype'),
+       url('../webfont/TruenoLt.eot') format('eot'), 
+       url('../webfont/TruenoLt.woff') format('woff'),
+       url('../webfont/TruenoLt.otf') format('otf'), 
+       url('../webfont/TruenoLt.woff2') format('woff2'), 
+       url('../webfont/TruenoLt.svg') format('svg'); 
+}
+ */
+@font-face {
+    font-family: 'TruenoBd';
+    src: url('../webfont/TruenoBd.ttf'); /* IE9 Compat Modes */
+    src: url('../webfont/TruenoBd.ttf') format('embedded-opentype'), /* IE6-IE8 */
+       url('../webfont/TruenoBd.eot') format('eot'), /* Super Modern Browsers */
+       url('../webfont/TruenoBd.woff') format('woff'), /* Super Modern Browsers */
+       url('../webfont/TruenoBd.otf') format('otf'), /* Super Modern Browsers */
+       url('../webfont/TruenoBd.woff2') format('woff2'), /* Pretty Modern Browsers */
+       url('../webfont/TruenoBd.svg') format('svg'); /* Legacy iOS */
+}
+
+/* font-family: 'Roboto', sans-serif; */
+body{
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+   -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+html{
+  min-height: 100%;
+  -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+h1{
+  font-size: 36px; 
+}
+
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 26px;   
+}
+
+h4 {
+  font-size: 22px;
+}
+h5 {
+  font-size: 18px;
+}
+h6 {
+  font-size: 16px;
+}
+p {
+  font-size: 15px;
+
+}
+
+a {
+  text-decoration: none;
+  font-size: 15px;
+}
+/*-------------------------
+loader
+----------------------------*/
+.loader {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url("../img/preloder.gif") 50% 50% no-repeat #fff;
+
+}
+
+
+
+/* ****************************
+header-area
+****************************** */
+.header-area {
+  background: url('../img/2-layers (8).png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  height: 100%;
+  margin-top: 52px;
+  margin-bottom: 30px;
+}
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  background: #7ed321;
+}
+.header-area .navbar-nav{
+  margin-left: auto!important;
+}
+
+.navbar-light .navbar-toggler {
+    color: #021744;
+    border-color: #021744;
+}
+
+button.navbar-toggler:focus {
+    outline: inherit;
+    outline: inherit
+}
+.navbar-light .navbar-brand {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 500;
+  font-family: 'TruenoBd';
+  letter-spacing: -1.21px;
+  -moz-text-shadow: 0 3px 6px rgba(0, 0, 0, 0.09);
+  -webkit-text-shadow: 0 3px 6px rgba(0, 0, 0, 0.09);
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.09);
+}
+.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
+   color: #fff;
+}
+/* .navbar-brand {
+    padding-top: 0;
+} */
+
+.navbar-light .navbar-nav .nav-link {
+  color: #fff;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  padding: 5px 25px;
+  line-height: 1.5;
+  font-weight: 500;
+  display: inline-block;
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link.login {
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  border-radius: 30px;
+  transition: all 0.4s ease;
+}
+.navbar-light .navbar-nav .nav-link.login:hover{
+  background: #fff;
+  color: #7ed321;
+  transition: all 0.4s ease;
+}
+/* .navbar {
+    padding: 30px 0;
+} */
+
+
+.heading-title {
+  margin-top: 18%;
+}
+.heading-title h1{
+  color: #fff;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+
+.heading-title p{
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+
+
+.Subscribe {
+  position: relative;
+  margin: 30px 0;
+}
+.Subscribe input {
+  background-color: #f2f5f8;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  padding: 8px 20px;
+  font-size: 14px;
+  border-radius: 30px;
+
+}
+.Subscribe input[type=email] {
+   width: 60%;
+  display: block;
+  margin-left: 0;
+}
+
+.Subscribe input[type=submit] {
+  position: absolute;
+  margin-left: 0;
+  bottom: 0;
+  right: 30%;
+  background: #0b2200;
+  color: #fff;
+  border: 1px solid #0b2200;
+  box-sizing: border-box;
+  padding: 8px 35px;
+  text-transform: uppercase;
+}
+.Subscribe input:focus{
+  outline: inherit;
+  box-shadow: inherit;
+}
+
+
+.heading-img {
+  overflow: hidden;
+  margin-top: 60px;
+  text-align: right;
+}
+.heading-img img{
+  height: 480px;
+}
+
+
+
+
+/* ***************************
+work-area
+***************************** */
+.work-area {
+  overflow: hidden;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 60px;
+}
+.title h2{
+  color: #021744;
+  font-size: 30px;
+  font-weight: 700;
+}
+.title h2:after{
+  display: block;
+  content: '';
+  clear: both;
+  background: #7ed321;
+  height: 2px;
+  width: 80px;
+  margin: 10px auto;
+}
+
+
+.works {
+  overflow: hidden;
+  text-align: center;
+  padding: 30px;
+  -webkit-box-shadow: 0 3px 16px rgba(93, 112, 223, 0.1);
+  -moz-box-shadow: 0 3px 16px rgba(93, 112, 223, 0.1);
+  box-shadow: 0 3px 16px rgba(93, 112, 223, 0.1);
+  transition: all 0.4s ease;
+}
+.works:hover{
+   transition: all 0.4s ease;
+    -moz-box-shadow: 0 5px 32px rgba(93, 112, 223, 0.24);
+    -webkit-box-shadow: 0 5px 32px rgba(93, 112, 223, 0.24);
+    box-shadow: 0 5px 32px rgba(93, 112, 223, 0.24);
+}
+
+
+.works h4{
+  color: #243668;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin: 10px 0;
+}
+.works h4:after{
+  display: block;
+  content: '';
+  clear: both;
+  background: #7ed321;
+  height: 2px;
+  width: 80px;
+  margin: 10px auto;
+}
+
+.works p{
+  color: #838fae;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+
+
+/* **************************
+save-time
+****************************** */
+.save-time{
+  overflow: hidden;
+  background-color: #fafff9;
+  padding-top: 60px;
+  height: 350px;
+}
+
+.save-img {
+  overflow: hidden;
+}
+.save-img img{
+  height: 500px;
+}
+.save-right {
+
+}
+
+.save-right h2{
+  color: #021744;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
+}
+
+.save-right p{
+  line-height: 1.5;
+  color: #838fae;
+  font-size: 14px;
+  margin: 20px 0;
+}
+
+
+a.btn-cus {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.5;
+  background: #7ed321;
+  border-radius: 30px;
+  color: #fff;
+  padding: 4px 20px;
+  transition: all 0.4s ease;
+  border: 1px solid #7ed321;
+  box-sizing: border-box;
+}
+
+a.btn-cus:hover{
+  transition: all 0.4s ease;
+  background: #fff;
+  border: 1px solid #7ed321;
+  color: #7ed321;
+}
+
+
+
+
+/* ***********************
+banner-area
+************************ */
+
+.banner-area {
+  overflow: hidden;
+  background-color: #7ed321;
+  padding: 80px 0;
+}
+
+.banner-left{
+
+}
+.banner-left h3{
+  color: #fff;
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+
+.banner-right {
+  text-align: center;
+}
+.banner-right h4{
+  font-weight: 600;
+  color: #0b2200;
+  line-height: 1.5;
+}
+.banner-right ul{
+   margin: 10px 0; 
+}
+.banner-right ul li{
+
+  display: inline;
+}
+.banner-right ul li a{
+  display: inline-block;
+}
+.banner-right ul li a img{
+  height: 50px;
+}
+
+
+/* **********************
+restaurant
+*********************** */
+.restaurant {
+  overflow: hidden;
+  padding-top: 60px;
+}
+.resta-left h3{
+  color: #0b2200;
+  line-height: 1.5;
+  font-weight: 700;
+  margin-top: 60px;
+}
+.resta-right img{
+  height: 330px;
+
+}
+
+
+/* ***********************
+your-plan
+*********************** */
+.your-plan {
+  overflow: hidden;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.your-plan:after{
+  display: block;
+  content: '';
+  clear: both;
+  background: url('../img/shap.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 180px;
+  margin-top: -100px;
+}
+
+.price {
+  background: url('../img/2-layers (3).png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding: 30px 0;
+  position: relative;
+}
+.price .offer-top{
+  position: absolute;
+  top: -12px;
+  right: 18px;
+  height: 50px;
+}
+.price .offer-less{
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  height: 40px;
+}
+
+.your-plan .col-md-4 {
+  padding-right: 0;
+  padding-left: 0;
+}
+.price p.daily{
+  color: #72b22e;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.price h3{
+  color: #72b22e;
+  line-height: 2;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.price del{
+  color: #d9d9d9;
+  line-height: 1;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 50px;
+  display: block;
+}
+
+.price p{
+  color: #44537e;
+  line-height: 1.5;
+  margin: 5px 0;
+}
+
+.price a.btn-cus {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+
+
+/* ***************************
+order
+************************** */
+.order {
+  padding: 60px 0;
+}
+.order-left img{
+  height: 450px;
+}
+.order-right {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.order-right h2{
+  font-size: 50px;
+  font-weight: 700;
+  color: #0b2200;
+  line-height: 2;
+}
+
+.order-right ul{
+   margin: 10px 0; 
+}
+.order-right ul li{
+
+  display: inline;
+}
+.order-right ul li a{
+  display: inline-block;
+}
+.order-right ul li a img{
+  height: 50px;
+}
+
+
+
+
+.newsletter {
+  text-align: center;
+   box-shadow: 0 -3px 16px rgba(31, 101, 255, 0.1);
+  border-radius: 10px;
+  background-color: #ffffff;
+  padding: 30px 0;
+  position: relative;
+  margin-top: 60px;
+  margin-bottom: -130px;
+}
+.newsletter h3{
+  color: #021744;
+  line-height: 1.5;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+
+.newsletter input {
+  background-color: #f2f5f8;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  padding: 8px 20px;
+  font-size: 14px;
+  border-radius: 30px;
+
+}
+.newsletter input[type=email] {
+  width: 60%;
+  display: block;
+  margin: 0 auto;
+}
+
+.newsletter input[type=submit] {
+  position: absolute;
+   margin-left: 0;
+  bottom: 30px;
+  right: 100px;
+  background: #7ed321;
+  color: #fff;
+  border: 1px solid #7ed321;
+  box-sizing: border-box;
+  padding: 8px 35px;
+  text-transform: uppercase;
+}
+.newsletter input:focus{
+  outline: inherit;
+  box-shadow: inherit;
+}
+
+
+
+/* ***************************
+footer-area
+**************************** */
+.footer-area {
+  background-image: url('../img/fo.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding: 30px 0;
+}
+
+
+.foter-menu {
+  margin-top: 100px;
+}
+.foter-menu h3{
+  color: #fff;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  font-family: 'TruenoBd';
+  letter-spacing: -1.21px;
+  -moz-text-shadow: 0 3px 6px rgba(0, 0, 0, 0.09);
+  -webkit-text-shadow: 0 3px 6px rgba(0, 0, 0, 0.09);
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.09);
+}
+.foter-menu h4{
+  color: #fff;
+  line-height: 1.5;
+  font-size: 16px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+.foter-menu p{
+  color: #8c9dbb;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+
+.foter-menu ul{
+  margin: 0;
+  padding: 0;
+}
+.foter-menu ul li{
+  list-style: none;
+}
+.foter-menu ul li a{
+  color: #8c9dbb;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 3px 0;
+}
+
+.social {
+  padding: 20px 0;
+}
+
+.social ul{
+  margin: 0;
+  padding: 0;
+}
+.social ul li{
+  list-style: none;
+  display: inline;
+}
+.social ul li a{
+  display: inline-block;
+  text-decoration: none;
+  font-size: 14px;
+  background: #7a92c8;
+  color: #021744;
+  padding: 6px;
+  line-height: 1;
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  text-align: center;
+}
+
+
+.copyright {
+  text-align: center;
+}
+.copyright p{
+  color: #8c9dbb;
+  font-size: 14px;
+}
